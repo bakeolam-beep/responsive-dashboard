@@ -1,35 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initial-scale-1.0" />
-        <title>Dashboard | HTML</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <div class="dashboard">
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <aside class="sidebar">
-                <div class="logo">♦ DashPro</div>
-                <nav>
-                    <a href="#" class="active">📊Dashboard</a>
-                    <a href="#">📉Analytics</a>
-                    <a href="#">📆Calendar</a>
-                    <a href="#">📁Messages</a>
-                    <a href="#">⚙Settings</a>
-                </nav>
-                </aside>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | HTML & CSS</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>" />
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">⚡ DashPro</div>
+      <nav>
+        <a href="#" class="active">📊 Dashboard</a>
+        <a href="#">📈 Analytics</a>
+        <a href="#">📅 Calendar</a>
+        <a href="#">✉️ Messages</a>
+        <a href="#">⚙️ Settings</a>
+      </nav>
+    </aside>
 
-                <!-- Main -->
-                <main class="main-content">
-                    <!-- Header -->
-                     <header class="topbar">
-                        <input type="search" placeholder="Search..." />
-                        <div class="user">John Doe</div>
-                     </header>
-                </main>
-            </div>
+    <!-- Main content area -->
+    <main class="main-content">
+      <!-- Header -->
+      <header class="topbar">
+        <input type="search" placeholder="Search..." />
+        <div class="user">👤 John Doe</div>
+      </header>
+
+      <!-- Stats cards -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>Total Users</h3>
+          <p class="value">12,450</p>
+          <small>↑ 12% this month</small>
         </div>
-    </body>
+        <div class="stat-card">
+          <h3>Revenue</h3>
+          <p class="value">$8,320</p>
+          <small>↑ 8% this month</small>
+        </div>
+        <div class="stat-card">
+          <h3>Orders</h3>
+          <p class="value">1,120</p>
+          <small>↓ 3% this month</small>
+        </div>
+        <div class="stat-card">
+          <h3>Conversion</h3>
+          <p class="value">3.2%</p>
+          <small>↑ 0.5% this month</small>
+        </div>
+      </section>
+
+      <!-- Charts section -->
+      <section class="charts">
+        <div class="chart-card">
+          <h3>Monthly Sales</h3>
+          <div class="bar-chart">
+            <div class="bar" style="--h: 70%;"><span>Jan</span></div>
+            <div class="bar" style="--h: 45%;"><span>Feb</span></div>
+            <div class="bar" style="--h: 90%;"><span>Mar</span></div>
+            <div class="bar" style="--h: 60%;"><span>Apr</span></div>
+            <div class="bar" style="--h: 80%;"><span>May</span></div>
+            <div class="bar" style="--h: 50%;"><span>Jun</span></div>
+          </div>
+        </div>
+        <div class="chart-card">
+          <h3>Traffic Sources</h3>
+          <div class="donut-chart">
+            <div class="donut"></div>
+            <div class="legend">
+              <span>🔵 Direct 40%</span>
+              <span>🟢 Organic 30%</span>
+              <span>🟠 Referral 20%</span>
+              <span>🔴 Social 10%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Recent activity table -->
+      <section class="recent">
+        <h3>Recent Activity</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Action</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alice</td>
+              <td>Logged in</td>
+              <td>Today</td>
+            </tr>
+            <tr>
+              <td>Bob</td>
+              <td>Purchased Pro</td>
+              <td>Yesterday</td>
+            </tr>
+            <tr>
+              <td>Carol</td>
+              <td>Signed up</td>
+              <td>2 days ago</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
 </html>
