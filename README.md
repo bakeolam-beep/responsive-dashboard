@@ -38,7 +38,7 @@ The project focuses on information hierarchy, visual clarity, and reusable dashb
 
 ## Demo
 
-🌐 **Live Demo:** _Paste your Vercel deployment URL here_
+🌐 **Live Demo:** https://responsive-dashboard-delta.vercel.app/
 
 ### Animated Preview
 
